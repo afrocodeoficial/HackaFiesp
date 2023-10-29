@@ -52,22 +52,19 @@ const Beneficios = () => {
     <Container>
       <Left>
         <Title>
-          {" "}
-          Apoio psicológico{" "}
+      
+        Resgate sua autoestima
           <p>
-            Sabemos que a jornada capilar pode ser um caminho emocionalmente
-            desafiador. Portanto, oferecemos um espaço seguro e confidencial,
-            onde você pode se conectar com psicólogos especializados que
-            compreendem as complexidades da sua experiência.
+          Nosso objetivo é construir um ambiente cada vez mais seguro e resgatar sua ancestralidade, para que você possa trilhar um caminho repleto de autoestima e empoderamento! 
           </p>{" "}
         </Title>
       </Left>
       <Right>
         <Title>
-          {" "}
+      
           Tutoriais
           <p>
-            Na AfroCode, reconhecemos que a transição capilar é uma jornada
+            Na Djeli, reconhecemos que a transição capilar é uma jornada
             única e que cada mulher tem suas próprias necessidades e
             preferências quando se trata de cuidar de seus cabelos naturais. É
             por isso que oferecemos diversos tutoriais.

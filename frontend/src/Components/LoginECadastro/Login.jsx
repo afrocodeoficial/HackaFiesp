@@ -34,7 +34,7 @@ const Title = styled.h1`
 
 const FormG = styled.form`
   display: flex;
-  width: 50%;
+  width: 100%;
  justify-content: center;
  gap: 200px;
 `;
@@ -42,7 +42,6 @@ const FormG = styled.form`
 const Form = styled.form`
   width: 500px;
   display: flex;
-
   flex-direction: column;
   gap: 25px;
   @media only screen and (max-width: 768px) {
@@ -51,6 +50,7 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+  width: 500px;
   padding: 20px;
   background-color: #dcdbde52;
   border: 2px solid;
@@ -63,7 +63,7 @@ const Label = styled.label`
   border: none;
   border-radius: 5px;
   color: #f9920c;
-  width: 100%;
+  width: 500px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
   
@@ -86,11 +86,9 @@ const Right = styled.div`
 
 const Img = styled.img`
   width: 100%;
-`;
-const Img1 = styled.img`
-
 
 `;
+
 const Button = styled.button`
   height: 50px;
   cursor: pointer;
@@ -154,9 +152,9 @@ const Login = () => {
     <Section>
       <Container>
         <Left>
-          <div>
-            <Img1 src="public/logo.png" />
-          </div>
+      
+        
+       
 
           <Title>Olá, que bom te ver novamente!</Title>
 

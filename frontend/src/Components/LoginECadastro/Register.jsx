@@ -34,7 +34,7 @@ const Title = styled.h1`
 
 const FormG = styled.form`
   display: flex;
-  width: 50%;
+  width: 100%;
   justify-content: center;
   gap: 200px;
 `;
@@ -42,7 +42,6 @@ const FormG = styled.form`
 const Form = styled.form`
   width: 500px;
   display: flex;
-
   flex-direction: column;
   gap: 25px;
   @media only screen and (max-width: 768px) {
@@ -51,6 +50,7 @@ const Form = styled.form`
 `;
 
 const Input = styled.input`
+  width: 500px;
   padding: 20px;
   background-color: #dcdbde52;
   border: 2px solid;
@@ -63,7 +63,7 @@ const Label = styled.label`
   border: none;
   border-radius: 5px;
   color: #f9920c;
-  width: 100%;
+  width: 500px;
   font-family: "Poppins", sans-serif;
   font-size: 20px;
 `;
@@ -85,7 +85,11 @@ const Right = styled.div`
 const Img = styled.img`
   width: 100%;
 `;
-const Img1 = styled.img``;
+
+const Img1 = styled.img`
+  width: 100%;
+`;
+
 const Button = styled.button`
   height: 50px;
   cursor: pointer;
@@ -114,23 +118,14 @@ const Button = styled.button`
     box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
   }
 `;
-const ButtonVerSenha = styled.button`
-  width: 100%;
-`;
 
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [passwordShown, setPasswordShown] = useState(false);
 
   const [_, setCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
-
-  const togglePassword = () => {
-    setPasswordShown(!passwordShown);
-  };
-
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -154,16 +149,15 @@ const Register = () => {
 
   return (
     <Container>
-      <Right>  <div>
-            <Img1 src="public/bgRegister.png" />
-          </div>
-        
+      <Right>
+        {" "}
+        <div>
+          <Img1 src="public/bgRegister.png" />
+        </div>
       </Right>
 
       <Left>
         <Form onSubmit={handleSubmit}>
-         
-
           <Title>Olá, seja bem vindo!</Title>
           <FormG>
             <Label htmlFor="username">Usuario:</Label>
@@ -186,22 +180,18 @@ const Register = () => {
           <FormG>
             <Label htmlFor="password">Senha:</Label>
             <Input
-            
-              type={passwordShown ? "text" : "password"}
               id="password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
             />
           </FormG>
-          <Link style={{ "text-decoration": "none" }} to="/login">Já é cadastrado? Faça login!</Link>
-          <Button type="submit">Cadastrar</Button> 
-<FormG>
-          <Input type={passwordShown ? "text" : "password"} />
-          <ButtonVerSenha onClick={togglePassword}>ver senha </ButtonVerSenha>
-          </FormG>
+          <Link style={{ "text-decoration": "none" }} to="/login">
+            Já é cadastrado? Faça login!
+          </Link>
+          <Button type="submit">Cadastrar</Button>
+          <FormG></FormG>
         </Form>
-        
-       </Left>
+      </Left>
     </Container>
   );
 };

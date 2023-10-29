@@ -32,10 +32,16 @@ const FooterLogo = styled.div`
   }
 `;
 
+const Logo = styled.img`
+ 
+`;
+
 const FooterNav = styled.nav`
   flex: 1;
   ul {
     list-style: none;
+    display: flex;
+    gap: 20px;
     padding: 0;
     li {
       margin-bottom: 10px;
@@ -76,7 +82,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterContent>
         <FooterLogo>
-          Your Logo
+        <Logo src="public/logo.png" />
         </FooterLogo>
         <FooterNav>
           <ul>
@@ -84,13 +90,13 @@ const Footer = () => {
               <a href="#">Home</a>
             </li>
             <li>
-              <a href="#">About Us</a>
+              <a href="#">Sobre nós</a>
             </li>
             <li>
-              <a href="#">Services</a>
+              <a href="#">Serviços</a>
             </li>
             <li>
-              <a href="#">Contact</a>
+              <a href="#">Contato</a>
             </li>
           </ul>
         </FooterNav>

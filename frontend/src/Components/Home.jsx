@@ -45,7 +45,7 @@ const Home = () => {
     <Section>
       <Container>
         <Title>
-          Conecte-se as suas raizes com a <p>AfroCode</p>
+        Conecte-se às suas raízes com a <p>Djeli.</p>
         </Title>
       </Container>
       <SobreNos />

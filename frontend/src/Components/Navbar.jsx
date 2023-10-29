@@ -196,15 +196,15 @@ const Navbar = () => {
           <ListItem1>Início</ListItem1>
         </Link>
 
-        <Link style={{ "text-decoration": "none" }} to="/">
+        {/* <Link style={{ "text-decoration": "none" }} to="/">
           <ListItem2>Ancestralidade</ListItem2>
-        </Link>
+        </Link> */}
 
         <Link style={{ "text-decoration": "none" }} to="/trilhas">
           <ListItem3>Tutoriais</ListItem3>
         </Link>
-        <Link style={{ "text-decoration": "none" }} to="/">
-          <ListItem4>Apoio psicológico</ListItem4>
+        <Link style={{ "text-decoration": "none" }} to="/dashboard">
+          <ListItem4>DashBoard</ListItem4>
         </Link>
 
         <div>

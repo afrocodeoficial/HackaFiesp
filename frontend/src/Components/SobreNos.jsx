@@ -21,12 +21,6 @@ const Title = styled.h1`
   width: 50%;
 
 
-  p{
-    color: #000000;
-    font-size: 30px;
-    font-family: "Poppins", sans-serif;
-    font-weight: 500;
-  }
 `;
 const Img = styled.img`
     max-width: 100%; /* Garante que a imagem não seja maior que o contêiner */
@@ -37,6 +31,12 @@ const Div = styled.div`
   flex-wrap: wrap;
   justify-content: center; /* Centraliza horizontalmente */
   align-items: center; /* Centraliza verticalmente */
+  width: 50%;
+  font-size: 30px;
+  color: #000000;
+
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 `;
 
 const SobreNos = () => {

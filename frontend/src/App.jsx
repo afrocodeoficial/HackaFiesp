@@ -6,6 +6,7 @@ import Footer from "./Components/Footer.jsx";
 import Register from "./Components/LoginECadastro/Register.jsx";
 import Login from "./Components/LoginECadastro/Login.jsx";
 import Trilhas from "./Components/Trilhas.jsx";
+import Influencer from "./Components/Influencer.jsx";
 
 
 const Section = styled.div`
@@ -41,6 +42,7 @@ function App() {
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
             <Route path="/trilhas" element={<Trilhas />} />
+            <Route path="/dashboard" element={<Influencer />} />
           </Routes>
           <Footer/>
         </Router>
