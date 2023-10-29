@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import SobreNos from "./sobrenos";
+import SobreNos from "./SobreNos.jsx"
 import Beneficios from "./Beneficios";
 import Forms from "./Forms";
 
