@@ -6,6 +6,9 @@ O projeto Djeli é uma plataforma web desenvolvida como parte do Hackathon da FI
 
 ## Público-Alvo
 
+## Tecnologias Utilizadas
+React.js, Node, MongoDb, Express, Bcrypt, JWT
+
 Nosso público-alvo principal são pessoas de origem afrodescendente com cabelo cacheado, crespo ou ondulado, independentemente de gênero ou origem étnica. De acordo com pesquisas, a maioria dos brasileiros tem cabelos com essas características, tornando esse mercado significativo.
 
 ## Propostas de Valor
@@ -46,11 +49,11 @@ Sinta-se à vontade para contribuir para o projeto Djeli. Se você deseja se env
 
 ## Equipe
 
-- [Nome do Membro da Equipe 1]
-- [Nome do Membro da Equipe 2]
-- [Nome do Membro da Equipe 3]
+- Anthony Thomas 
+- Erica Inicia De Lima
+- Marcos Vinicius
+- Lilian Carvalho
+- Lais Carvalho
 
-## Licença
 
-Este projeto é licenciado sob a Licença [Inserir Nome da Licença]. Veja o arquivo [LICENSE.md](LICENSE.md) para obter mais detalhes.
 
