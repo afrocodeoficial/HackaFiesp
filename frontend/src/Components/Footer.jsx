@@ -1,80 +1,113 @@
-import React from 'react'
-import styled from 'styled-components'
+import React from 'react';
+import styled from 'styled-components';
 
-const Section = styled.div`
-  display: flex;
-  align-items: center;
-
-  width: 100%;
-  height: 300px;
-
-  background-color: #011526;
+const FooterContainer = styled.footer`
+background-color: #011526;
+  color: #fff;
+  padding: 20px 0;
 `;
 
-const Container = styled.div`
+const FooterContent = styled.div`
   display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
   align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
 
-  width: 100%;
-  height: 300px;
-
-  background-color: white;
-`;
-
-const Title = styled.div`
-display: flex;
-flex-direction: column;
-align-items: center;
-  color: white;
-  font-size: 50px;
-  font-weight: bold;
-  font-family: "Poppins", sans-serif;
-gap: 60px;
-  p {
-  width: 80%;
-    font-size: 25px;
-    font-weight: 300;
+  @media (max-width: 768px) {
+    flex-direction: column;
+    text-align: center;
   }
 `;
 
-const Left = styled.div`
-  display: flex;
-  background-color: #011526;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  height: 300px;
-  width: 50%;
+const FooterLogo = styled.div`
+  flex: 1;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 10px;
+
+  @media (max-width: 768px) {
+    text-align: center;
+  }
 `;
 
-const Right = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  background-color: #011526;
-  height: 300px;
-  width: 50%;
+const FooterNav = styled.nav`
+  flex: 1;
+  ul {
+    list-style: none;
+    padding: 0;
+    li {
+      margin-bottom: 10px;
+      a {
+        text-decoration: none;
+        color: #fff;
+        transition: color 0.3s;
+        &:hover {
+          color: #f9920c;
+        }
+      }
+    }
+  }
 `;
 
+const FooterSocial = styled.div`
+  flex: 1;
+  text-align: right;
+  a {
+    margin-left: 20px;
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+    transition: color 0.3s;
+    &:hover {
+      color: #f9920c;
+    }
+  }
+
+  @media (max-width: 768px) {
+    text-align: center;
+    margin-top: 20px;
+  }
+`;
 
 const Footer = () => {
   return (
-  <Section>
-<Container>
-    <Left>
-        <Title>
-            Sobre nós
-            <p></p>
-        </Title>
-    </Left>
-    <Right>
+    <FooterContainer>
+      <FooterContent>
+        <FooterLogo>
+          Your Logo
+        </FooterLogo>
+        <FooterNav>
+          <ul>
+            <li>
+              <a href="#">Home</a>
+            </li>
+            <li>
+              <a href="#">About Us</a>
+            </li>
+            <li>
+              <a href="#">Services</a>
+            </li>
+            <li>
+              <a href="#">Contact</a>
+            </li>
+          </ul>
+        </FooterNav>
+        <FooterSocial>
+          <a href="#">
+            <i className="fab fa-facebook"></i>
+          </a>
+          <a href="#">
+            <i className="fab fa-twitter"></i>
+          </a>
+          <a href="#">
+            <i className="fab fa-instagram"></i>
+          </a>
+        </FooterSocial>
+      </FooterContent>
+    </FooterContainer>
+  );
+};
 
-    </Right>
-</Container>
-
-  </Section>
-  )
-}
-
-export default Footer
+export default Footer;

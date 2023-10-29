@@ -13,6 +13,7 @@ const Section = styled.div`
 const Container = styled.div`
 display: flex;
 width: 100%;
+height: 100vh;
  align-items: center;
 justify-content: space-between;
 
@@ -25,12 +26,13 @@ const Left = styled.div`
  
 
 
-  display: flex;
-  justify-content: center;
-  width: 50%;
+ display: flex;
+ width: 50%;
   height: 100%;
+align-items: center;
+justify-content: center;
   border-radius: 5px;
-  margin: 5rem auto 0 auto;
+ 
 
 
   @media (max-width: 768px) {
@@ -44,10 +46,11 @@ const Left = styled.div`
 `;
 
 const Right = styled.div`
- 
+ display: flex;
  width: 50%;
   height: 100%;
-
+align-items: center;
+justify-content: center;
 `;
 
 
@@ -197,7 +200,7 @@ const Forms = () => {
 
         <Right>
 
-<Img src="public/modeloforms.png"  />
+<Img src="public/bgforms.jpg"  />
         </Right>
 
       </Container>

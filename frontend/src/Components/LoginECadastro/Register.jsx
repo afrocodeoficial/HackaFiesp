@@ -114,14 +114,23 @@ const Button = styled.button`
     box-shadow: rgb(100 100 111 / 50%) 0 7px 29px 0;
   }
 `;
+const ButtonVerSenha = styled.button`
+  width: 100%;
+`;
 
 const Register = () => {
   const [username, setUsername] = useState("");
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
+  const [passwordShown, setPasswordShown] = useState(false);
 
   const [_, setCookies] = useCookies(["access_token"]);
   const navigate = useNavigate();
+
+  const togglePassword = () => {
+    setPasswordShown(!passwordShown);
+  };
+
 
   const handleSubmit = async (event) => {
     event.preventDefault();
@@ -177,14 +186,19 @@ const Register = () => {
           <FormG>
             <Label htmlFor="password">Senha:</Label>
             <Input
-              type="password"
+            
+              type={passwordShown ? "text" : "password"}
               id="password"
               value={password}
               onChange={(event) => setPassword(event.target.value)}
             />
           </FormG>
           <Link style={{ "text-decoration": "none" }} to="/login">Já é cadastrado? Faça login!</Link>
-          <Button type="submit">Cadastrar</Button>
+          <Button type="submit">Cadastrar</Button> 
+<FormG>
+          <Input type={passwordShown ? "text" : "password"} />
+          <ButtonVerSenha onClick={togglePassword}>ver senha </ButtonVerSenha>
+          </FormG>
         </Form>
         
        </Left>

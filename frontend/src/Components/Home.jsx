@@ -3,13 +3,13 @@ import styled from "styled-components";
 import SobreNos from "./sobrenos";
 import Beneficios from "./Beneficios";
 import Forms from "./Forms";
-import Footer from "./Footer";
+
 
 
 const Section = styled.div`
   @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
   width: 100vw;
-  height: 200%;
+  height: auto;
 
 
 `;
@@ -17,10 +17,12 @@ const Section = styled.div`
 const Container = styled.div`
   background-image: url(public/bghome.jpg);
   width: 100%;
-  height: 70vh;
+  height: 100vh;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
+  display: flex;
+  align-items: center;
 `;
 
 
@@ -45,11 +47,11 @@ const Home = () => {
         <Title>
           Conecte-se as suas raizes com a <p>AfroCode</p>
         </Title>
-        <SobreNos />
+      </Container>
+      <SobreNos />
         <Beneficios/>
         <Forms/>
-        <Footer/>
-      </Container>
+   
     
     </Section>
   );

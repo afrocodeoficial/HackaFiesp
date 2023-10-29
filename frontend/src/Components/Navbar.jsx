@@ -89,7 +89,7 @@ position: relative;
     width: 100%;
     height: 4px;
 
-    background-color: #BF0404;
+    background-color: #0493bf;
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.3s;
@@ -112,8 +112,7 @@ position: relative;
     left: 0;
     width: 100%;
     height: 4px;
-
-    background-color: #BF0404;
+    background-color: #2df20a;
     transform: scaleX(0);
     transform-origin: bottom left;
     transition: transform 0.3s;
@@ -182,7 +181,7 @@ const Navbar = () => {
   const logout = () => {
     setCookies("access_token", "");
     window.localStorage.clear();
-    navigate("/auth");
+    navigate("/");
   };
   return (
     <Container>
@@ -201,7 +200,7 @@ const Navbar = () => {
           <ListItem2>Ancestralidade</ListItem2>
         </Link>
 
-        <Link style={{ "text-decoration": "none" }} to="/">
+        <Link style={{ "text-decoration": "none" }} to="/trilhas">
           <ListItem3>Tutoriais</ListItem3>
         </Link>
         <Link style={{ "text-decoration": "none" }} to="/">

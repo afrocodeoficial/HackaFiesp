@@ -2,9 +2,10 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import  Navbar from "./Components/Navbar.jsx";
 import styled from "styled-components";
-
+import Footer from "./Components/Footer.jsx";
 import Register from "./Components/LoginECadastro/Register.jsx";
 import Login from "./Components/LoginECadastro/Login.jsx";
+import Trilhas from "./Components/Trilhas.jsx";
 
 
 const Section = styled.div`
@@ -39,8 +40,9 @@ function App() {
             <Route path="/" element={<Home />} />
             <Route path="/login" element={<Login />} />
             <Route path="/register" element={<Register />} />
+            <Route path="/trilhas" element={<Trilhas />} />
           </Routes>
-          
+          <Footer/>
         </Router>
       </Container>
     </Section>
