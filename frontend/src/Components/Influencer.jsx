@@ -92,7 +92,7 @@ const Influencer = () => {
     <Section>
       <Container>
         <Title>
-          <p>Home > DashBoard Influencer</p>
+          <p>Home ➵ DashBoard Influencer</p>
           DashBoard Influencer
         </Title>
       </Container>

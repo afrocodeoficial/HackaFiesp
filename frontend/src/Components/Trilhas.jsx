@@ -54,7 +54,7 @@ const Trilhas = () => {
     <Section>
       <Container>
         <Title>
-          <p>Home > Trilha de AUTOESTIMA</p>
+          <p>Home ➵ Trilha de AUTOESTIMA</p>
           TRILHA DE AUTOESTIMA
         </Title>
       </Container>
