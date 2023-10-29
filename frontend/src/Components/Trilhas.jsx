@@ -31,7 +31,7 @@ const Container = styled.div`
   justify-content: center;
   width: 100%;
   height: 500px;
-  background-image: url(public/destaque.jpg);
+  background-image: url("/destaque.jpg");
 `;
 
 const Title = styled.div`
