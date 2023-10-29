@@ -187,7 +187,7 @@ const Navbar = () => {
     <Container>
       <Link to="/">
       
-        <Logo src="public/logo.png" />
+        <Logo src="/logo.png" />
       </Link>
 
       <Links>

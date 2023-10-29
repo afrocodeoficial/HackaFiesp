@@ -15,7 +15,7 @@ const Section = styled.div`
 `;
 
 const Container = styled.div`
-  background-image: url(public/bghome.jpg);
+  background-image: url("public/bghome.jpg");
   width: 100%;
   height: 100vh;
   background-repeat: no-repeat;
