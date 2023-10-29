@@ -193,7 +193,7 @@ const Navbar = () => {
 
       <Links>
 
-        <Link style={{ "text-decoration": "none" }} to="/auth">
+        <Link style={{ "text-decoration": "none" }} to="/">
           <ListItem1>Início</ListItem1>
         </Link>
 
@@ -209,14 +209,15 @@ const Navbar = () => {
         </Link>
 
         <div>
-          {" "}
+          
           {!cookies.access_token ? (
-            <Link to="/auth">
-              {" "}
+            <Link to="/login">
+            
              
               <Button>Entrar</Button>
+              <Link to="/register">
               <ButtonC>Cadastre-se</ButtonC>
-              
+              </Link>
             </Link>
           ) : (
 

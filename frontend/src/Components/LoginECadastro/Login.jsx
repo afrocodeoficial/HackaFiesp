@@ -1,23 +1,24 @@
 import React, { useState } from "react";
 import axios from "axios";
 import { useCookies } from "react-cookie";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import styled from "styled-components";
 import swal from "sweetalert";
 
 const Section = styled.div`
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
   display: flex;
   align-items: center;
   justify-content: space-between;
   color: #000000;
-  width: 100%;
   height: 100vh;
+  width: 100%;
+   display: flex;
 `;
 
 const Container = styled.div`
   display: flex;
   align-items: center;
-
   color: #000000;
   width: 100%;
   height: 100vh;
@@ -34,7 +35,8 @@ const Title = styled.h1`
 const FormG = styled.form`
   display: flex;
   width: 50%;
-  justify-content: space-between;
+ justify-content: center;
+ gap: 200px;
 `;
 
 const Form = styled.form`
@@ -60,8 +62,11 @@ const Label = styled.label`
   padding: 20px 0px;
   border: none;
   border-radius: 5px;
-  color: white;
+  color: #f9920c;
   width: 100%;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  
 `;
 
 
@@ -185,6 +190,7 @@ const Login = () => {
                 onChange={(event) => setPassword(event.target.value)}
               />
             </FormG>
+            <Link style={{ "text-decoration": "none" }} to="/register">Não tem cadastro? Cadastre-se!</Link>
             <Button type="submit">Entrar</Button>
           </Form>
         </Left>

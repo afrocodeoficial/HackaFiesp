@@ -3,6 +3,7 @@ import React, { useRef, useState } from "react";
 import styled from "styled-components";
 
 const Section = styled.div`
+ @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500&display=swap");
   height: 100vh;
   width: 100%;
    display: flex;

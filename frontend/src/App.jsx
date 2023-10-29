@@ -2,7 +2,9 @@ import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Home from "./Components/Home.jsx";
 import  Navbar from "./Components/Navbar.jsx";
 import styled from "styled-components";
-import { Auth } from "./Components/Auth.jsx";
+
+import Register from "./Components/LoginECadastro/Register.jsx";
+import Login from "./Components/LoginECadastro/Login.jsx";
 
 
 const Section = styled.div`
@@ -35,7 +37,8 @@ function App() {
           <Navbar />
           <Routes>
             <Route path="/" element={<Home />} />
-            <Route path="/auth" element={<Auth />} />
+            <Route path="/login" element={<Login />} />
+            <Route path="/register" element={<Register />} />
           </Routes>
           
         </Router>
