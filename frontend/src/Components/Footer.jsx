@@ -82,7 +82,7 @@ const Footer = () => {
     <FooterContainer>
       <FooterContent>
         <FooterLogo>
-        <Logo src="public/logo.png" />
+        <Logo src="/logo.png" />
         </FooterLogo>
         <FooterNav>
           <ul>

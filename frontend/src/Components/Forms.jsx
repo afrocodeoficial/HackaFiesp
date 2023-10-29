@@ -200,7 +200,7 @@ const Forms = () => {
 
         <Right>
 
-<Img src="public/bgforms.jpg"  />
+<Img src="/bgforms.jpg"  />
         </Right>
 
       </Container>

@@ -47,7 +47,7 @@ const SobreNos = () => {
             <p>Somos mais do que uma plataforma. Somos um refúgio de amor, ancestralidade e empoderamento para todas as mulheres negras que estão passando pelo período de transição capilar. Aqui, acreditamos que a jornada capilar é muito mais do que apenas cuidar dos fios; é um ato de autoafirmação, resistência e celebração da nossa identidade. Aqui, acreditamos que seus cabelos são um reflexo da sua herança cultural, uma história de resistência e força que transcende gerações.</p>
         </Div>
     
-      <Img src="public/sobrenos.png" alt="" />
+      <Img src="/sobrenos.png" alt="" />
   </Container>
   )
 }

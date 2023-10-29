@@ -152,7 +152,7 @@ const Register = () => {
       <Right>
         {" "}
         <div>
-          <Img1 src="public/bgRegister.png" />
+          <Img1 src="/bgRegister.png" />
         </div>
       </Right>
 

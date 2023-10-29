@@ -106,8 +106,8 @@ const Influencer = () => {
 
 
 
-        <div><img src="public/Métricas.jpg" alt="" /></div>
-        <div><img src="public/4.jpg" alt="" /></div>
+        <div><img src="/Métricas.jpg" alt="" /></div>
+        <div><img src="/4.jpg" alt="" /></div>
         
 
 

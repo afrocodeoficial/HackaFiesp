@@ -62,9 +62,9 @@ const Trilhas = () => {
         
          CATEGORIAS
         </h1>
-        <div><img src="public/model.jpg" alt="" /></div>
-        <div><img src="public/model2.jpg" alt="" /></div>
-        <div><img src="public/model3.jpg" alt="" /></div>
+        <div><img src="/model.jpg" alt="" /></div>
+        <div><img src="/model2.jpg" alt="" /></div>
+        <div><img src="/model3.jpg" alt="" /></div>
     </Section>
   );
 };
